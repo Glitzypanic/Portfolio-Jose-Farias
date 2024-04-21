@@ -8,10 +8,6 @@ export default {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {
-		'primary': '#F9F4F0',
-		'secondary': '#25452f',
-    },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
