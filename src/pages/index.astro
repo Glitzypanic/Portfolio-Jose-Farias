@@ -1,39 +1,70 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Cards from "../components/Cards.astro";
+import "../styles/sentient.css";
+import "./index.css";
 ---
 
 <Layout title="Porfolio Jose Farias">
-	<main class="text-secondary">
-		<!-- About me  -->
-		<section class="flex ">
-			<div class="border border-red-500 p-10">
-				<h1 class="text-3xl font-bold">Jose Farias</h1>
-				<p class="text-lg">Frontend Developer</p>
-				<p class="text-lg">I'm a frontend developer with a passion for creating beautiful and functional websites. I have experience working with HTML, CSS, and JavaScript, and I'm always looking to learn new technologies and improve my skills. I'm currently looking for new opportunities to work on exciting projects and collaborate with other talented developers.</p>
-			</div>
-			<img src="../../public/jose.jpg" alt="" width="250" height="250">
-		</section>
+  <main class="max-w-screen-xl bg-[#F6723B] h-svh pt-[50px]">
+    <!-- About me  -->
+    <section class="flex flex-col mt-10">
+      <div class="p-10">
+        <h1 class="text-7xl title">Desarrollador Web</h1>
+        <h2 class="text-3xl">Jose Farias</h2>
+      </div>
+      <span class="border border-black w-full"></span>
+      <div class="flex items-end p-10">
+        <div>
+          <p class="text-xl w-90 mr-5">
+            I'm a frontend developer with a passion for creating beautiful and
+            functional websites. I have experience working with HTML, CSS, and
+            JavaScript, and I'm always looking to learn new technologies and
+            improve my skills. I'm currently looking for new opportunities to
+            work on exciting projects and collaborate with other talented
+            developers.
+          </p>
+        </div>
+        <img
+          src="../../public/jose.jpg"
+          alt=""
+          width="450"
+          height="450"
+          class="grayscale"
+        />
+      </div>
+    </section>
 
+    <!-- Experience -->
+    <section class="bg-[#EAEAEA] p-10">
+      <h2 class="text-5xl ">Experience</h2>
+      <p class="w-[700px] mt-10 text-xl">
+        I have experience working with HTML, CSS, and JavaScript, and I'm always
+        looking to learn new technologies and improve my skills. I'm currently
+        looking for new opportunities to work on exciting projects and
+        collaborate with other talented developers.
+      </p>
+    </section>
 
+    <!-- Projects -->
+    <section class="p-10">
+		<h2 class="text-5xl">Proyects</h2>
+		<Cards />
+	</section>
 
-		<!-- Experience -->
-		<section>
-
-		</section>
-
-
-
-		 <!-- Projects -->
-		<section>
-
-		</section>
-
-
-
-		 <!-- Tools	 -->
-		<section>
-
-		</section>
-	</main>
+    <!-- Tools	 -->
+    <section></section>
+  </main>
 </Layout>
+
+<style>
+  h1,
+  h2 {
+    font-family: "System-ui", sans-serif;
+  }
+  img {
+    -webkit-box-shadow: 15px 15px 0px 0px black;
+    -moz-box-shadow: 15px 15px 0px 0px black;
+    box-shadow: 15px 15px 0px 0px black;
+  }
+</style>
