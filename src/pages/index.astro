@@ -6,54 +6,81 @@ import "./index.css";
 ---
 
 <Layout title="Porfolio Jose Farias">
-  <main class="max-w-screen-xl bg-[#F6723B] h-svh pt-[50px]">
+  <main class="max-w-screen-xl h-svh pt-[50px] text-[#d0dee2] absolute">
     <!-- About me  -->
-    <section class="flex flex-col mt-10">
-      <div class="p-10">
-        <h1 class="text-7xl title">Desarrollador Web</h1>
-        <h2 class="text-3xl">Jose Farias</h2>
-      </div>
-      <span class="border border-black w-full"></span>
-      <div class="flex items-end p-10">
-        <div>
-          <p class="text-xl w-90 mr-5">
-            I'm a frontend developer with a passion for creating beautiful and
-            functional websites. I have experience working with HTML, CSS, and
-            JavaScript, and I'm always looking to learn new technologies and
-            improve my skills. I'm currently looking for new opportunities to
-            work on exciting projects and collaborate with other talented
-            developers.
-          </p>
-        </div>
-        <img
-          src="../../public/jose.jpg"
-          alt=""
-          width="450"
-          height="450"
-          class="grayscale"
-        />
+    <section class="p-5 mt-10 flex flex-col">
+      <img src="jose.jpg" alt="" class="rounded-full h-32 w-32" />
+      <h1 class="text-3xl font-bold mt-5">Hola 👋🏻, me llamo Jose</h1>
+      <p class="text-balance mt-8 w-full text-lg">
+        Tengo 25 años y soy de Quilpue, Chile 🇨🇱. llevo mas de +1 año
+        especializandome en lenguajes y herramientas de programacion para
+        emprender mi camino como Desarrollador Web 👨‍🚀. Me gusta enfocarme en el
+        diseño y estructura de mis proyectos 🏗️.
+      </p>
+      <div class="mt-5 flex gap-5">
+        <button class="border rounded-3xl w-32 p-1">Github</button>
+        <button class="border rounded-3xl w-32 p-1">LinkedIn</button>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="bg-[#EAEAEA] p-10">
-      <h2 class="text-5xl ">Experience</h2>
-      <p class="w-[700px] mt-10 text-xl">
-        I have experience working with HTML, CSS, and JavaScript, and I'm always
-        looking to learn new technologies and improve my skills. I'm currently
-        looking for new opportunities to work on exciting projects and
-        collaborate with other talented developers.
+    <section class="p-5 mt-10">
+      <h3
+        class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
+      >
+        <img src="suitcase.svg" alt="" /> Experiencia
+      </h3>
+      <p class="text-balance mt-5 text-lg">
+        Actualmente, estoy colaborando con el desarrollo de la página web de la
+        organización Multidiversos ONG ✅, dedicada a promover la conciencia
+        colectiva, facilitar información, generar espacios para personas con
+        diversidad funcional, dar orientaciones y difundir información relevante
+        sobre la diversidad funcional y la inclusión social. Este proyecto es
+        especialmente significativo para mí, ya que me ofrece la oportunidad de
+        aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi
+        primera experiencia práctica en el campo de la programación web 💻.
       </p>
     </section>
 
     <!-- Projects -->
-    <section class="p-10">
-		<h2 class="text-5xl">Proyects</h2>
-		<Cards />
-	</section>
+    <section class="mt-10">
+      <h2
+        class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
+      >
+        <img src="code.svg" alt="" /> Proyectos
+      </h2>
+      <Cards>
+        <h3 slot="title">Multidiversos ONG</h3>
+        <p slot="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus
+          nam molestiae voluptatem accusamus asperiores nisi labore. Itaque
+          provident incidunt vero perspiciatis odio totam, reprehenderit magnam
+          ducimus, distinctio laboriosam doloremque.
+        </p>
+      </Cards>
+      <Cards>
+        <h3 slot="title">AudioFi</h3>
+        <p slot="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus
+          nam molestiae voluptatem accusamus asperiores nisi labore. Itaque
+          provident incidunt vero perspiciatis odio totam, reprehenderit magnam
+          ducimus, distinctio laboriosam doloremque.
+        </p>
+      </Cards>
+    </section>
 
     <!-- Tools	 -->
-    <section></section>
+    <section class="mt-10 p-5">
+      <h2 class="text-2xl items-center justify-center inline-flex gap-3"><img src="xray-view.svg" alt="">Herramientas</h2>
+      <div class="grid grid-cols-3">
+        <img src="html.svg" alt="" class="w-10 h-10" />
+        <img src="css.svg" alt="" class="w-10 h-10" />
+        <img src="javascript.svg" alt="" class="w-10 h-10" />
+        <img src="react.svg" alt="" class="w-10 h-10" />
+        <img src="nodejs.svg" alt="" class="w-10 h-10" />
+        <img src="mongodb.svg" alt="" class="w-10 h-10" />
+      </div>
+    </section>
   </main>
 </Layout>
 
@@ -61,10 +88,5 @@ import "./index.css";
   h1,
   h2 {
     font-family: "System-ui", sans-serif;
-  }
-  img {
-    -webkit-box-shadow: 15px 15px 0px 0px black;
-    -moz-box-shadow: 15px 15px 0px 0px black;
-    box-shadow: 15px 15px 0px 0px black;
   }
 </style>
