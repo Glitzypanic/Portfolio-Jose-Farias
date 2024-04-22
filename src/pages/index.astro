@@ -9,7 +9,7 @@ import "./index.css";
   <main class="max-w-screen-xl h-svh pt-[50px] text-[#d0dee2] absolute">
     <!-- About me  -->
     <section class="p-5 mt-10 flex flex-col">
-      <img src="jose.jpg" alt="" class="rounded-full h-32 w-32" />
+      <img src="img/jose.jpg" alt="" class="rounded-full h-32 w-32" />
       <h1 class="text-3xl font-bold mt-5">Hola 👋🏻, me llamo Jose</h1>
       <p class="text-balance mt-8 w-full text-lg">
         Tengo 25 años y soy de Quilpue, Chile 🇨🇱. llevo mas de +1 año
@@ -28,7 +28,7 @@ import "./index.css";
       <h3
         class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
       >
-        <img src="suitcase.svg" alt="" /> Experiencia
+        <img src="svg/suitcase.svg" alt="" /> Experiencia
       </h3>
       <p class="text-balance mt-5 text-lg">
         Actualmente, estoy colaborando con el desarrollo de la página web de la
@@ -47,7 +47,7 @@ import "./index.css";
       <h2
         class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
       >
-        <img src="code.svg" alt="" /> Proyectos
+        <img src="svg/code.svg" alt="" /> Proyectos
       </h2>
       <Cards>
         <h3 slot="title">Multidiversos ONG</h3>
@@ -71,15 +71,46 @@ import "./index.css";
 
     <!-- Tools	 -->
     <section class="mt-10 p-5">
-      <h2 class="text-2xl items-center justify-center inline-flex gap-3"><img src="xray-view.svg" alt="">Herramientas</h2>
-      <div class="grid grid-cols-3">
-        <img src="html.svg" alt="" class="w-10 h-10" />
-        <img src="css.svg" alt="" class="w-10 h-10" />
-        <img src="javascript.svg" alt="" class="w-10 h-10" />
-        <img src="react.svg" alt="" class="w-10 h-10" />
-        <img src="nodejs.svg" alt="" class="w-10 h-10" />
-        <img src="mongodb.svg" alt="" class="w-10 h-10" />
+      <h2 class="text-2xl font-semibold items-center justify-center inline-flex gap-3">
+        <img src="svg/xray-view.svg" alt="">Herramientas
+      </h2>
+      <h3 class="mt-5 mb-3 text-lg">Lenguajes</h3>
+      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
+        <img src="svg/html5.svg" alt="" class="w-10 h-10" />
+        <img src="svg/css.svg" alt="" class="w-10 h-10" />
+        <img src="svg/javascript.svg" alt="" class="w-10 h-10" />
       </div>
+      <h3 class="mt-5 mb-3 text-lg">Frameworks</h3>
+      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
+        <img src="svg/tailwindcss.svg" alt="" class="w-10 h-10" />
+        <img src="svg/react.svg" alt="" class="w-10 h-10" />
+        <img src="svg/astro_dark.svg" alt="" class="w-10 h-10">
+      </div>
+      <h3 class="mt-5 mb-3 text-lg">Librerias</h3> 
+      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
+        <img src="svg/nodejs.svg" alt="" class="w-10 h-10" />
+        <img src="svg/reactrouter.svg" alt="" class="w-10 h-10" />
+      </div>
+      <h3 class="mt-5 mb-3 text-lg">Software</h3>
+      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
+        <img src="svg/notion.svg" alt="" class="w-10 h-10" />
+        <img src="svg/git.svg" alt="" class="w-10 h-10" />
+        <img src="svg/github.svg" alt="" class="w-10 h-10" />
+        <img src="svg/canva.svg" alt="" class="w-10 h-10">
+      </div>
+      <h3 class="mt-5 mb-3 text-lg">Compiladores</h3>
+      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
+        <img src="svg/vitejs.svg" alt="" class="w-10 h-10" />
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="mt-10 p-5">
+      <h2 class="text-2xl font-semibold gap-3 inline-flex items-center justify-center">
+        <img src="svg/user-love.svg" alt="" /> Sobre mi
+      </h2>
+      <p class="text-balance mt-5 text-lg">
+      </p>
     </section>
   </main>
 </Layout>
