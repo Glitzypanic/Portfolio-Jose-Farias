@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Cards from "../components/Cards.astro";
+import ToolsCard from "../components/ToolsCard.astro";
+
 import "../styles/sentient.css";
 import "./index.css";
 ---
@@ -8,47 +10,93 @@ import "./index.css";
 <Layout title="Porfolio Jose Farias">
   <main class="max-w-screen-lg h-svh pt-[50px] text-[#d0dee2] absolute">
     <!-- About me  -->
-    <section class="p-5 mt-10 flex flex-col">
-      <img src="img/jose.jpg" alt="" class="rounded-full h-32 w-32" />
-      <h1 class="text-3xl font-bold mt-5">Hola 👋🏻, me llamo Jose</h1>
-      <p class="text-balance mt-8 w-full text-lg">
-        Tengo 25 años y soy de Quilpue, Chile 🇨🇱. llevo mas de +1 año
-        especializandome en lenguajes y herramientas de programacion para
-        emprender mi camino como Desarrollador Web 👨‍🚀. Me gusta enfocarme en el
-        diseño y estructura de mis proyectos 🏗️.
+    <section class="p-5 mt-10 flex flex-col items-center">
+      <img src="img/jose.jpg" alt="" class="rounded-full h-[130px] w-[130px]" />
+      <h1 class="text-6xl font-bold mt-5 text-center">
+        Hola! me llamo <br />
+        <span>Jose Farias 👋🏻</span>
+      </h1>
+      <p class="text-center mt-8 w-[70%] text-xl">
+        Soy un desarrollador web autodidacta con experiencia previa en la
+        creación de sitios para organizaciones sin fines de lucro✨. Me apasiona
+        el diseño y disfruto plasmar ideas en código 🚀. Actualmente, estoy
+        ampliando mis habilidades en el manejo de bases de datos para
+        complementar mi conjunto de destrezas en desarrollo web front-end.
       </p>
       <div class="mt-5 flex gap-5">
-        <button class="flex justify-center gap-3 border rounded-3xl w-32 p-1"><img src="svg/github-light.svg" alt="" class="w-5 h-5"> Github</button>
-        <button class="flex justify-center gap-3 border rounded-3xl w-32 p-1"><img src="svg/linkedin.svg" alt="" class="w-5 h-5"> LinkedIn</button>
+        <a
+          role="button"
+          href="https://github.com/Glitzypanic"
+          target="_blank"
+          class="flex justify-center gap-3 border rounded-3xl w-32 p-1"
+          ><img src="svg/github-light.svg" alt="" class="w-5 h-5" /> Github</a
+        >
+        <a
+          role="button"
+          href="https://www.linkedin.com/in/jose-daniel-farias-cordova-56b70928b/"
+          target="_blank"
+          class="flex justify-center gap-3 border rounded-3xl w-32 p-1"
+          ><img src="svg/linkedin.svg" alt="" class="w-5 h-5" /> LinkedIn</a
+        >
       </div>
     </section>
 
-    <!-- Experience -->
-    <section class="p-5 mt-10">
-      <h3
-        class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
+    <!-- About me -->
+    <section class="mt-10 p-5">
+      <h2
+        class="text-2xl font-semibold gap-3 inline-flex items-center justify-center"
       >
-        <img src="svg/suitcase.svg" alt="" /> Experiencia
-      </h3>
-      <p class="text-balance mt-5 text-lg">
-        Actualmente, estoy colaborando con el desarrollo de la página web de la
-        organización Multidiversos ONG ✅, dedicada a promover la conciencia
-        colectiva, facilitar información, generar espacios para personas con
-        diversidad funcional, dar orientaciones y difundir información relevante
-        sobre la diversidad funcional y la inclusión social. Este proyecto es
-        especialmente significativo para mí, ya que me ofrece la oportunidad de
-        aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi
-        primera experiencia práctica en el campo de la programación web 💻.
+        <img src="svg/user-love.svg" alt="" /> Sobre mi
+      </h2>
+      <p class="text-pretty mt-5 text-lg">
+        Tengo 25 años y soy de Quilpué, Chile 🇨🇱. Apasionado por la musica y la
+        tecnologia. Desde mi infancia, siempre he sentido una profunda
+        fascinación por la tecnología y por comprender cómo funcionan las cosas.
+        Rara vez he necesitado recurrir a servicios técnicos para mis
+        dispositivos, pues disfruto investigando las causas de los problemas y
+        encontrando soluciones por mí mismo. Esta pasión me llevó a tener mi
+        primer contacto tanto con el software como con el hardware. Hasta el día
+        de hoy, nunca me he quedado de brazos cruzados ante un desafío
+        tecnológico, siempre buscando activamente resolverlo.
+      </p>
+      <p class="text-pretty mt-5 text-lg">
+        Me titulé en Ingeniería en Sonido y, después de trabajar en ese campo,
+        decidí cambiar hacia el desarrollo web, cambio que no me costo mucho ya
+        que por lo que te conte mas arriba, siempre he tenido un computador en
+        mis manos. Durante más de un año, me he especializado en diversos
+        lenguajes y herramientas de programación para forjar mi camino como
+        Desarrollador Web 👨‍🚀. Me apasiona especialmente enfocarme en el diseño y
+        la estructura de mis proyectos 🗂️.
       </p>
     </section>
 
-    <!-- Projects -->
-    <section class="mt-10">
-      <h2
-        class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
-      >
-        <img src="svg/code.svg" alt="" /> Proyectos
-      </h2>
+  <!-- Experience -->
+  <section class="p-5 mt-10 rounded-md">
+    <h3
+      class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
+    >
+      <img src="svg/suitcase.svg" alt="" /> Experiencia
+    </h3>
+    <p class="text-pretty mt-5 text-lg">
+      Actualmente, estoy colaborando con el desarrollo de la página web de la
+      organización Multidiversos ONG ✅, dedicada a promover la conciencia
+      colectiva, facilitar información, generar espacios para personas con
+      diversidad funcional, dar orientaciones y difundir información relevante
+      sobre la diversidad funcional y la inclusión social. Este proyecto es
+      especialmente significativo para mí, ya que me ofrece la oportunidad de
+      aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi primera
+      experiencia práctica en el campo de la programación web 💻.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="mt-10">
+    <h2
+      class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
+    >
+      <img src="svg/code.svg" alt="" /> Proyectos
+    </h2>
+    <div class="flex justify-between mx-5">
       <Cards>
         <h3 slot="title">Multidiversos ONG</h3>
         <p slot="description">
@@ -67,52 +115,58 @@ import "./index.css";
           ducimus, distinctio laboriosam doloremque.
         </p>
       </Cards>
-    </section>
+    </div>
+  </section>
 
-    <!-- Tools	 -->
-    <section class="mt-10 p-5">
-      <h2 class="text-2xl font-semibold items-center justify-center inline-flex gap-3">
-        <img src="svg/xray-view.svg" alt="">Herramientas
-      </h2>
-      <h3 class="mt-5 mb-3 text-lg">Lenguajes</h3>
-      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
-        <img src="svg/html5.svg" alt="" class="w-10 h-10" />
-        <img src="svg/css.svg" alt="" class="w-10 h-10" />
-        <img src="svg/javascript.svg" alt="" class="w-10 h-10" />
-      </div>
-      <h3 class="mt-5 mb-3 text-lg">Frameworks</h3>
-      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
-        <img src="svg/tailwindcss.svg" alt="" class="w-10 h-10" />
-        <img src="svg/react.svg" alt="" class="w-10 h-10" />
-        <img src="svg/astro_dark.svg" alt="" class="w-10 h-10">
-      </div>
-      <h3 class="mt-5 mb-3 text-lg">Librerias</h3> 
-      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
-        <img src="svg/nodejs.svg" alt="" class="w-10 h-10" />
-        <img src="svg/reactrouter.svg" alt="" class="w-10 h-10" />
-      </div>
-      <h3 class="mt-5 mb-3 text-lg">Software</h3>
-      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
-        <img src="svg/notion.svg" alt="" class="w-10 h-10" />
-        <img src="svg/git.svg" alt="" class="w-10 h-10" />
-        <img src="svg/github.svg" alt="" class="w-10 h-10" />
-        <img src="svg/canva.svg" alt="" class="w-10 h-10">
-      </div>
-      <h3 class="mt-5 mb-3 text-lg">Compiladores</h3>
-      <div class="flex gap-5 bg-white/30 p-3 rounded-md">
-        <img src="svg/vitejs.svg" alt="" class="w-10 h-10" />
-      </div>
-    </section>
+  <!-- Tools	 -->
+  <section class="mt-10 p-5">
+    <h2
+      class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
+    >
+      <img src="svg/xray-view.svg" alt="" />Herramientas
+    </h2>
+    <div class="grid grid-cols-11 w-fit gap-3 mt-5 rounded-md">
+      <ToolsCard src="svg/html5.svg"/>
+      <ToolsCard src="svg/css.svg"/>
+      <ToolsCard src="svg/javascript.svg"/>
+      <ToolsCard src="svg/react.svg"/>
+      <ToolsCard src="svg/tailwindcss.svg"/>
+      <ToolsCard src="svg/nodejs.svg"/>
+      <ToolsCard src="svg/reactrouter.svg"/>
+      <ToolsCard src="svg/git.svg"/>
+      <ToolsCard src="svg/github-light.svg"/>
+      <ToolsCard src="svg/vitejs.svg"/>
+      <ToolsCard src="svg/astro_dark.svg"/>
+      <ToolsCard src="svg/canva.svg"/>
+      <ToolsCard src="svg/docker.svg"/>
+      <ToolsCard src="svg/notion.svg"/>
+    </div>
+  </section>
 
-    <!-- About me -->
-    <section class="mt-10 p-5">
-      <h2 class="text-2xl font-semibold gap-3 inline-flex items-center justify-center">
-        <img src="svg/user-love.svg" alt="" /> Sobre mi
-      </h2>
-      <p class="text-balance mt-5 text-lg">
-      </p>
-    </section>
-  </main>
+  <!-- Contact -->
+  <section class="mt-10 p-5">
+    <h2
+      class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
+    >
+      <img src="svg/user-plus.svg" alt="" />Contacto
+    </h2>
+    <div class="mt-5 flex">
+      <p class="text-lg mt-5 w-[50%]">Interesado en trabajar conmigo?</p>
+      <img src="img/jose.jpg" alt="" width="350" class="grayscale mt-5 w-[50%]"/>
+    </div>
+  </section>
+  <footer class="mt-5 p-5 flex justify-between items-center">
+    <p>© 2021 Jose Farias</p>
+    <ul class="flex gap-3">
+      <li>
+        <a href="/about">Sobre mi</a>
+      </li>
+      <li>
+        <a href="">Contactame</a>
+      </li>
+      </ul>
+  </footer>
+</main>
 </Layout>
 
 <style>
