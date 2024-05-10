@@ -5,15 +5,19 @@ import ToolsCard from "../components/ToolsCard.astro";
 ---
 
 <Layout title="Porfolio Jose Farias">
-  <main class="max-w-screen-lg w-full mt-[50px] text-[#d0dee2] ">
+  <main class="max-w-screen-lg w-full mt-[50px] text-[#d0dee2]">
     <!-- Home -->
     <section class="p-5 mt-10 flex justify-center flex-col items-center">
       <img src="img/jose.jpg" alt="" class="rounded-full h-[130px] w-[130px]" />
-      <h1 class="lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-bold mt-5 text-center">
+      <h1
+        class="lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-bold mt-5 text-center"
+      >
         Hola! me llamo <br />
         <span>Jose Farias 👋🏻</span>
       </h1>
-      <p class="text-center mt-8 w-[70%] lg:text-xl md:text-lg sm:w-full sm:text-lg xs:w-full">
+      <p
+        class="text-center mt-8 w-[70%] lg:text-xl md:text-lg sm:w-full sm:text-lg xs:w-full"
+      >
         Soy un desarrollador web autodidacta con experiencia previa en la
         creación de sitios para organizaciones sin fines de lucro✨. Me apasiona
         el diseño y disfruto plasmar ideas en código 🚀. Actualmente, estoy
@@ -40,14 +44,12 @@ import ToolsCard from "../components/ToolsCard.astro";
 
     <!-- About me -->
     <section id="about" class="mt-10 p-5 flex flex-col">
-      <h2
-        class="text-2xl font-semibold gap-3 inline-flex items-center"
-      >
+      <h2 class="text-2xl font-semibold gap-3 inline-flex items-center">
         <img src="svg/user-love.svg" alt="" /> Sobre mi
       </h2>
       <p class="mt-5 text-lg xs:text-pretty">
-      Tengo 25 años y soy de Quilpué, Chile 🇨🇱. Apasionado por la musica y la
-        tecnologia. Desde mi infancia, siempre he sentido una profunda
+        Tengo 25 años y soy de Quilpué, Chile 🇨🇱. Apasionado por la música y la
+        tecnología. Desde mi infancia, siempre he sentido una profunda
         fascinación por la tecnología y por comprender cómo funcionan las cosas.
         Rara vez he necesitado recurrir a servicios técnicos para mis
         dispositivos, pues disfruto investigando las causas de los problemas y
@@ -58,8 +60,8 @@ import ToolsCard from "../components/ToolsCard.astro";
       </p>
       <p class="text-pretty mt-5 text-lg">
         Me titulé en Ingeniería en Sonido y, después de trabajar en ese campo,
-        decidí cambiar hacia el desarrollo web, cambio que no me costo mucho ya
-        que por lo que te conte mas arriba, siempre he tenido un computador en
+        decidí cambiar hacia el desarrollo web, cambio que no me costó mucho, ya
+        que por lo que te conté más arriba, siempre he tenido un computador en
         mis manos. Durante más de un año, me he especializado en diversos
         lenguajes y herramientas de programación para forjar mi camino como
         Desarrollador Web 👨‍🚀. Me apasiona especialmente enfocarme en el diseño y
@@ -67,91 +69,95 @@ import ToolsCard from "../components/ToolsCard.astro";
       </p>
     </section>
 
-  <!-- Experience -->
-  <section id="experience" class="p-5 mt-10 rounded-md">
-    <h3
-      class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
-    >
-      <img src="svg/suitcase.svg" alt="" /> Experiencia
-    </h3>
-    <p class="text-pretty mt-5 text-lg">
-      Actualmente, estoy colaborando con el desarrollo de la página web de la
-      organización Multidiversos ONG ✅, dedicada a promover la conciencia
-      colectiva, facilitar información, generar espacios para personas con
-      diversidad funcional, dar orientaciones y difundir información relevante
-      sobre la diversidad funcional y la inclusión social. Este proyecto es
-      especialmente significativo para mí, ya que me ofrece la oportunidad de
-      aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi primera
-      experiencia práctica en el campo de la programación web 💻.
-    </p>
-  </section>
+    <!-- Experience -->
+    <section id="experience" class="p-5 mt-10 rounded-md">
+      <h3
+        class="text-2xl font-semibold inline-flex gap-3 items-center justify-center"
+      >
+        <img src="svg/suitcase.svg" alt="" /> Experiencia
+      </h3>
+      <p class="text-pretty mt-5 text-lg">
+        Actualmente, estoy colaborando con el desarrollo de la página web de la
+        organización Multidiversos ONG ✅, dedicada a promover la conciencia
+        colectiva, facilitar información, generar espacios para personas con
+        diversidad funcional, dar orientaciones y difundir información relevante
+        sobre la diversidad funcional y la inclusión social. Este proyecto es
+        especialmente significativo para mí, ya que me ofrece la oportunidad de
+        aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi
+        primera experiencia práctica en el campo de la programación web 💻.
+      </p>
+    </section>
 
-  <!-- Projects -->
-  <section id="proyects" class="mt-10">
-    <h2
-      class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
-    >
-      <img src="svg/code.svg" alt="" /> Proyectos
-    </h2>
-    <div class="lg:flex lg:flex-row md:flex md:flex-row sm:flex-col justify-between mx-5">
-      <Cards>
-        <h3 slot="title">Multidiversos ONG</h3>
-        <p slot="description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus
-          nam molestiae voluptatem accusamus asperiores nisi labore. Itaque
-          provident incidunt vero perspiciatis odio totam, reprehenderit magnam
-          ducimus, distinctio laboriosam doloremque.
-        </p>
-      </Cards>
-      <Cards>
-        <h3 slot="title">AudioFi</h3>
-        <p slot="description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus
-          nam molestiae voluptatem accusamus asperiores nisi labore. Itaque
-          provident incidunt vero perspiciatis odio totam, reprehenderit magnam
-          ducimus, distinctio laboriosam doloremque.
-        </p>
-      </Cards>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section id="proyects" class="mt-10">
+      <h2
+        class="text-2xl font-semibold p-5 gap-3 inline-flex items-center justify-center"
+      >
+        <img src="svg/code.svg" alt="" /> Proyectos
+      </h2>
+      <div
+        class="lg:flex lg:flex-row md:flex md:flex-row sm:flex-col justify-between mx-5"
+      >
+        <Cards>
+          <h3 slot="title">Multidiversos ONG</h3>
+          <p slot="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            natus nam molestiae voluptatem accusamus asperiores nisi labore.
+            Itaque provident incidunt vero perspiciatis odio totam,
+            reprehenderit magnam ducimus, distinctio laboriosam doloremque.
+          </p>
+        </Cards>
+        <Cards>
+          <h3 slot="title">AudioFi</h3>
+          <p slot="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            natus nam molestiae voluptatem accusamus asperiores nisi labore.
+            Itaque provident incidunt vero perspiciatis odio totam,
+            reprehenderit magnam ducimus, distinctio laboriosam doloremque.
+          </p>
+        </Cards>
+      </div>
+    </section>
 
-  <!-- Tools	 -->
-  <section id="tools" class="mt-10 p-5">
-    <h2
-      class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
-    >
-      <img src="svg/xray-view.svg" alt="" />Herramientas
-    </h2>
-    <div class="lg:grid lg:grid-cols-11 md:grid md:grid-cols-11 sm:grid sm:grid-cols-5 xs:grid xs:grid-cols-4 w-fit gap-3 mt-5 rounded-md">
-      <ToolsCard src="svg/html5.svg"/>
-      <ToolsCard src="svg/css.svg"/>
-      <ToolsCard src="svg/javascript.svg"/>
-      <ToolsCard src="svg/react.svg"/>
-      <ToolsCard src="svg/tailwindcss.svg"/>
-      <ToolsCard src="svg/nodejs.svg"/>
-      <ToolsCard src="svg/reactrouter.svg"/>
-      <ToolsCard src="svg/git.svg"/>
-      <ToolsCard src="svg/github-light.svg"/>
-      <ToolsCard src="svg/vitejs.svg"/>
-      <ToolsCard src="svg/astro.svg"/>
-      <ToolsCard src="svg/canva.svg"/>
-      <ToolsCard src="svg/docker.svg"/>
-      <ToolsCard src="svg/notion.svg"/>
-    </div>
-  </section>
+    <!-- Tools	 -->
+    <section id="tools" class="mt-10 p-5">
+      <h2
+        class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
+      >
+        <img src="svg/xray-view.svg" alt="" />Herramientas
+      </h2>
+      <div
+        class="lg:grid lg:grid-cols-11 md:grid md:grid-cols-11 sm:grid sm:grid-cols-5 xs:grid xs:grid-cols-4 w-fit gap-3 mt-5 rounded-md"
+      >
+        <ToolsCard src="svg/html5.svg" />
+        <ToolsCard src="svg/css.svg" />
+        <ToolsCard src="svg/javascript.svg" />
+        <ToolsCard src="svg/react.svg" />
+        <ToolsCard src="svg/tailwindcss.svg" />
+        <ToolsCard src="svg/nodejs.svg" />
+        <ToolsCard src="svg/reactrouter.svg" />
+        <ToolsCard src="svg/git.svg" />
+        <ToolsCard src="svg/github-light.svg" />
+        <ToolsCard src="svg/vitejs.svg" />
+        <ToolsCard src="svg/astro.svg" />
+        <ToolsCard src="svg/canva.svg" />
+        <ToolsCard src="svg/docker.svg" />
+        <ToolsCard src="svg/notion.svg" />
+      </div>
+    </section>
 
-  <footer class="mt-10 p-5 flex justify-between items-center">
-    <p>© 2024 Jose Farias</p>
-    <ul class="flex gap-3">
-      <li>
-        <a href="/#about">Sobre mi</a>
-      </li>
-      <li>
-        <a href="mailto:jose.fariascdv@gmail.com">Contactame</a>
-      </li>
+    <footer class="mt-10 p-5 flex justify-between items-center">
+      <p>© 2024 Jose Farias</p>
+      <ul class="flex gap-3">
+        <li>
+          <a href="/#about">Sobre mi</a>
+        </li>
+        <li>
+          <a href="mailto:jose.fariascdv@gmail.com">Contactame</a>
+        </li>
       </ul>
-  </footer>
-</main>
+    </footer>
+  </main>
 </Layout>
 
 <style>
