@@ -1,13 +1,29 @@
-<div class=" mt-5 flex bg-gray-500/30 lg:w-[450px] md:w-[350px]">
+---
+let { imgSrc = "" } = Astro.props;
+let { linkWeb = "" } = Astro.props;
+let { linkGithub = "" } = Astro.props;
+---
+
+<div class="mt-5 flex bg-gray-500/30 lg:w-[450px] md:w-[350px]">
   <div class="info p-5">
-    <img src="img/desktop.png" alt="" width="400">
-    <h3 class="text-xl mt-5"> <slot name="title" /> </h3>
+    <img src={imgSrc} alt="" width="400" />
+    <h3 class="text-xl mt-5"><slot name="title" /></h3>
     <p class="text-md mt-2 text-pretty">
-      <slot name="description"/>
+      <slot name="description" />
     </p>
     <div class="mt-10">
-        <a role="button" class="border-b border-[#d0dee2] mr-3" href="https://github.com/Glitzypanic/multidiversos-ong" target="_blank">Github</a>
-        <a role="button" class=" border-b border-[#d0dee2] " href="https://multidiversos.netlify.app/" target="_blank">Live Code</a>
+      <a
+        role="button"
+        class="border-b border-[#d0dee2] mr-3"
+        href={linkGithub}
+        target="_blank">Github</a
+      >
+      <a
+        role="button"
+        class="border-b border-[#d0dee2]"
+        href={linkWeb}
+        target="_blank">Sitio web</a
+      >
     </div>
   </div>
 </div>
