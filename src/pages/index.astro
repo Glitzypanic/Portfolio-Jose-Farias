@@ -102,71 +102,79 @@ import ToolsCard from "../components/ToolsCard.astro";
       <div
         class="lg:flex lg:flex-row md:flex md:flex-row sm:flex-col justify-between mx-5"
       >
-        <Cards>
+        <Cards
+          imgSrc="img/desktop.png"
+          linkWeb="https://multidiversos.netlify.app/"
+          linkGithub="https://github.com/Glitzypanic/multidiversos-ong"
+        >
           <h3 slot="title">Multidiversos ONG</h3>
           <p slot="description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            natus nam molestiae voluptatem accusamus asperiores nisi labore.
-            Itaque provident incidunt vero perspiciatis odio totam,
-            reprehenderit magnam ducimus, distinctio laboriosam doloremque.
+            Este proyecto muestra mi versión del sitio web de la organización
+            Multidiversos ONG ✅, donde he abordado varios aspectos importantes
+            para mejorar la experiencia del usuario, la accesibilidad y el
+            rendimiento del sitio ⚡.
           </p>
         </Cards>
-        <Cards>
-          <h3 slot="title">AudioFi</h3>
+        <Cards
+          imgSrc="img/foto.png"
+          linkWeb="https://photogrpher-portfolio.netlify.app"
+          linkGithub="https://github.com/Glitzypanic/photographer-portfolio-template"
+        >
+          <h3 slot="title">Porfolio para fotógrafos</h3>
           <p slot="description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            natus nam molestiae voluptatem accusamus asperiores nisi labore.
-            Itaque provident incidunt vero perspiciatis odio totam,
-            reprehenderit magnam ducimus, distinctio laboriosam doloremque.
+            Esta página web está diseñada específicamente para un portafolio de
+            fotografía 📸. Con una estética elegante y funcional, esta página
+            muestra cómo un fotógrafo puede presentar su trabajo de manera
+            profesional. 💻
           </p>
         </Cards>
       </div>
-    </section>
 
-    <!-- Tools	 -->
-    <section id="tools" class="mt-10 p-5">
-      <h2
-        class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
-      >
-        <img src="svg/xray-view.svg" alt="" />Herramientas
-      </h2>
-      <div
-        class="lg:grid lg:grid-cols-11 md:grid md:grid-cols-11 sm:grid sm:grid-cols-5 xs:grid xs:grid-cols-4 w-fit gap-3 mt-5 rounded-md"
-      >
-        <ToolsCard src="svg/html5.svg" />
-        <ToolsCard src="svg/css.svg" />
-        <ToolsCard src="svg/javascript.svg" />
-        <ToolsCard src="svg/react.svg" />
-        <ToolsCard src="svg/tailwindcss.svg" />
-        <ToolsCard src="svg/nodejs.svg" />
-        <ToolsCard src="svg/reactrouter.svg" />
-        <ToolsCard src="svg/git.svg" />
-        <ToolsCard src="svg/github-light.svg" />
-        <ToolsCard src="svg/vitejs.svg" />
-        <ToolsCard src="svg/astro.svg" />
-        <ToolsCard src="svg/canva.svg" />
-        <ToolsCard src="svg/docker.svg" />
-        <ToolsCard src="svg/notion.svg" />
-      </div>
-    </section>
+      <!-- Tools	 -->
+      <section id="tools" class="mt-10 p-5">
+        <h2
+          class="text-2xl font-semibold items-center justify-center inline-flex gap-3"
+        >
+          <img src="svg/xray-view.svg" alt="" />Herramientas
+        </h2>
+        <div
+          class="lg:grid lg:grid-cols-11 md:grid md:grid-cols-11 sm:grid sm:grid-cols-5 xs:grid xs:grid-cols-4 w-fit gap-3 mt-5 rounded-md"
+        >
+          <ToolsCard src="svg/html5.svg" />
+          <ToolsCard src="svg/css.svg" />
+          <ToolsCard src="svg/javascript.svg" />
+          <ToolsCard src="svg/react.svg" />
+          <ToolsCard src="svg/tailwindcss.svg" />
+          <ToolsCard src="svg/nodejs.svg" />
+          <ToolsCard src="svg/reactrouter.svg" />
+          <ToolsCard src="svg/git.svg" />
+          <ToolsCard src="svg/github-light.svg" />
+          <ToolsCard src="svg/vitejs.svg" />
+          <ToolsCard src="svg/astro.svg" />
+          <ToolsCard src="svg/canva.svg" />
+          <ToolsCard src="svg/docker.svg" />
+          <ToolsCard src="svg/notion.svg" />
+        </div>
+      </section>
 
-    <footer class="mt-10 p-5 flex justify-between items-center">
-      <p>© 2024 Jose Farias</p>
-      <ul class="flex gap-3">
-        <li>
-          <a href="/#about">Sobre mi</a>
-        </li>
-        <li>
-          <a href="mailto:jose.fariascdv@gmail.com">Contactame</a>
-        </li>
-      </ul>
-    </footer>
+      <footer class="mt-10 p-5 flex justify-between items-center">
+        <p>© 2024 Jose Farias</p>
+        <ul class="flex gap-3">
+          <li>
+            <a href="/#about">Sobre mi</a>
+          </li>
+          <li>
+            <a href="mailto:jose.fariascdv@gmail.com">Contactame</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
   </main>
-</Layout>
 
-<style>
-  h1,
-  h2 {
-    font-family: "System-ui", sans-serif;
-  }
-</style>
+  <style>
+    h1,
+    h2 {
+      font-family: "System-ui", sans-serif;
+    }
+  </style>
+</Layout>
