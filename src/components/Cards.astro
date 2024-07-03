@@ -2,9 +2,66 @@
 let { imgSrc = "" } = Astro.props;
 let { linkWeb = "" } = Astro.props;
 let { linkGithub = "" } = Astro.props;
+let { statuses = [] } = Astro.props;
+
+const getStatusPill = (status) => {
+  switch (status) {
+    case "online":
+      return {
+        text: "Online",
+        classes: "bg-green-100/10 text-green-400 border border-green-400",
+        statusImg: "svg/dot.svg",
+      };
+    case "new":
+      return {
+        text: "New",
+        classes: "bg-blue-100/10 text-blue-400 border border-blue-400",
+        statusImg: "svg/Star.svg",
+        imgClasses: "w-4",
+      };
+    case "updated":
+      return {
+        text: "Updated",
+        classes: "bg-yellow-100/10 text-yellow-400 border border-yellow-400",
+        statusImg: "svg/updated.svg",
+      };
+    case "popular":
+      return {
+        text: "Popular",
+        classes: "bg-red-100/10 text-red-400 border border-red-400",
+        statusImg: "svg/Fire.svg",
+        imgClasses: "w-4",
+      };
+    default:
+      return null; // No renderizar nada si no hay estado
+  }
+};
 ---
 
-<div class="mt-5 flex bg-gray-500/30 lg:w-[450px] md:w-[350px]">
+<div
+  class="mt-5 flex flex-col bg-gray-500/30 lg:w-[450px] md:w-[350px] rounded-lg"
+>
+  <div class="flex flex-wrap space-x-2 mt-3 ml-5">
+    {
+      statuses.map((status) => {
+        const statusPill = getStatusPill(status);
+        return statusPill ? (
+          <div
+            class={`flex items-center ${statusPill.classes} rounded-full px-3 py-1 text-sm font-semibold w-fit`}
+          >
+            <span class="icon w-5 mr-1">
+              <img
+                src={statusPill.statusImg}
+                alt=""
+                class={statusPill.imgClasses}
+              />
+            </span>{" "}
+            {statusPill.text}
+          </div>
+        ) : null;
+      })
+    }
+  </div>
   <div class="info p-5">
     <img src={imgSrc} alt="" width="400" />
     <h3 class="text-xl mt-5"><slot name="title" /></h3>
@@ -14,13 +71,13 @@ let { linkGithub = "" } = Astro.props;
     <div class="mt-10">
       <a
         role="button"
-        class="border-b border-[#d0dee2] mr-3"
+        class="border-b border-[#d0dee2] mr-3 hover:border-pink-500 hover:text-pink-500"
         href={linkGithub}
         target="_blank">Github</a
       >
       <a
         role="button"
-        class="border-b border-[#d0dee2]"
+        class="border-b border-[#d0dee2] hover:border-pink-500 hover:text-pink-500"
         href={linkWeb}
         target="_blank">Sitio web</a
       >
