@@ -17,38 +17,50 @@ import ToolsCard from "../components/ToolsCard.astro";
         class="lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-bold mt-5 text-center"
       >
         Hola! me llamo <br />
-        <span>Jose Farias 👋🏻</span>
+        <span>José Farías 👋🏻</span>
       </h1>
       <p
         class="text-center mt-8 w-[70%] lg:text-xl md:text-lg sm:w-full sm:text-lg xs:w-full"
       >
-        Soy un desarrollador web autodidacta con experiencia previa en la
-        creación de sitios para organizaciones sin fines de lucro✨. Me apasiona
-        el diseño y disfruto plasmar ideas en código 🚀. Actualmente, estoy
+        Soy un desarrollador web autodidacta con experiencia en la creación de
+        sitios web que buscan impactar positivamente✨. Me apasiona el diseño y
+        disfruto materializar ideas en código 🚀. En este momento, estoy
         ampliando mis habilidades en el manejo de bases de datos para
-        complementar mi conjunto de destrezas en desarrollo web front-end.
+        complementar mi conjunto de destrezas en desarrollo web front-end 🧑🏻‍💻.
       </p>
-      <div class="mt-5 flex gap-5">
+      <div class="mt-5 flex lg:gap-5 md:gap-5 xs:gap-2">
         <a
           role="button"
           href="https://github.com/Glitzypanic"
           target="_blank"
-          class="flex justify-center gap-3 border rounded-3xl w-32 p-1"
-          ><img src="svg/github-light.svg" alt="" class="w-5 h-5" /> Github</a
+          class="lg:flex md:flex xs:flex md:justify-center xs:justify-center lg:justify-center xs:items-center lg:gap-3 border rounded-3xl lg:w-32 md:w-32 xs:w-28 xs:gap-1 md:gap-3 p-1 text-md hover:border-pink-500"
+          ><img
+            src="svg/github-light.svg"
+            alt=""
+            class="lg:w-5 lg:h-5 md:w-5 md:h-5 xs:w-4 xs:h-4"
+          /> Github</a
         >
         <a
           role="button"
           href="https://www.linkedin.com/in/jose-daniel-farias-cordova-56b70928b/"
           target="_blank"
-          class="flex justify-center gap-3 border rounded-3xl w-32 p-1"
-          ><img src="svg/linkedin.svg" alt="" class="w-5 h-5" /> LinkedIn</a
+          class="lg:flex md:flex xs:flex md:justify-center xs:justify-center lg:justify-center xs:items-center lg:gap-3 border rounded-3xl lg:w-32 md:w-32 xs:w-28 xs:gap-1 md:gap-3 p-1 text-md hover:border-pink-500"
+          ><img
+            src="svg/linkedin.svg"
+            alt=""
+            class="lg:w-5 lg:h-5 md:w-5 md:h-5 xs:w-4 xs:h-4"
+          /> LinkedIn</a
         >
         <a
           role="button"
           download="Jose Farias CV"
           href="Jose-farias-cv.pdf"
-          class="flex justify-center gap-3 border rounded-3xl w-32 p-1"
-          ><img src="svg/pdf.svg" alt="" class="w-5 h-5" /> CV</a
+          class="lg:flex md:flex xs:flex md:justify-center xs:justify-center lg:justify-center xs:items-center lg:gap-3 border rounded-3xl lg:w-32 md:w-32 xs:w-28 xs:gap-1 md:gap-3 p-1 text-md hover:border-pink-500"
+          ><img
+            src="svg/pdf.svg"
+            alt=""
+            class="lg:w-5 lg:h-5 md:w-5 md:h-5 xs:w-4 xs:h-4"
+          /> CV</a
         >
       </div>
     </section>
@@ -56,7 +68,7 @@ import ToolsCard from "../components/ToolsCard.astro";
     <!-- About me -->
     <section id="about" class="mt-10 p-5 flex flex-col">
       <h2 class="text-2xl font-semibold gap-3 inline-flex items-center">
-        <img src="svg/user-love.svg" alt="" /> Sobre mi
+        <img src="svg/user-love.svg" alt="" /> Sobre mí
       </h2>
       <p class="mt-5 text-lg xs:text-pretty">
         Tengo 25 años y soy de Quilpué, Chile 🇨🇱. Apasionado por la música y la
@@ -88,14 +100,17 @@ import ToolsCard from "../components/ToolsCard.astro";
         <img src="svg/suitcase.svg" alt="" /> Experiencia
       </h3>
       <p class="text-pretty mt-5 text-lg">
-        Actualmente, estoy colaborando con el desarrollo de la página web de la
-        organización Multidiversos ONG ✅, dedicada a promover la conciencia
-        colectiva, facilitar información, generar espacios para personas con
-        diversidad funcional, dar orientaciones y difundir información relevante
-        sobre la diversidad funcional y la inclusión social. Este proyecto es
-        especialmente significativo para mí, ya que me ofrece la oportunidad de
-        aplicar mis habilidades y aumentar mis conocimientos 🚀, siendo mi
-        primera experiencia práctica en el campo de la programación web 💻.
+        <span class="flex items-center text-md mb-2 justify-end">
+          06 / 06 / 2024
+        </span>
+        Recientemente, colaboré en el desarrollo de la página web de la organización
+        Multidiversos ONG ✅, dedicada a promover la conciencia colectiva, facilitar
+        información, generar espacios para personas con diversidad funcional, dar
+        orientaciones y difundir información relevante sobre la diversidad funcional
+        y la inclusión social. Este proyecto fue especialmente significativo para
+        mí, ya que me permitió aplicar mis habilidades y aumentar mis conocimientos
+        🚀, representando mi primera experiencia práctica en el campo de la programación
+        web 💻.
       </p>
     </section>
 
@@ -107,12 +122,13 @@ import ToolsCard from "../components/ToolsCard.astro";
         <img src="svg/code.svg" alt="" /> Proyectos
       </h2>
       <div
-        class="lg:flex lg:flex-row md:flex md:flex-row sm:flex-col justify-between mx-5"
+        class="lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 m-auto w-full p-5"
       >
         <Cards
           imgSrc="img/desktop.png"
           linkWeb="https://multidiversos.netlify.app/"
           linkGithub="https://github.com/Glitzypanic/multidiversos-ong"
+          statuses={["online", "popular"]}
         >
           <h3 slot="title">Multidiversos ONG</h3>
           <p slot="description">
@@ -126,6 +142,7 @@ import ToolsCard from "../components/ToolsCard.astro";
           imgSrc="img/foto.png"
           linkWeb="https://photogrpher-portfolio.netlify.app"
           linkGithub="https://github.com/Glitzypanic/photographer-portfolio-template"
+          statuses={["online"]}
         >
           <h3 slot="title">Porfolio para fotógrafos</h3>
           <p slot="description">
@@ -133,6 +150,20 @@ import ToolsCard from "../components/ToolsCard.astro";
             fotografía 📸. Con una estética elegante y funcional, esta página
             muestra cómo un fotógrafo puede presentar su trabajo de manera
             profesional. 💻
+          </p>
+        </Cards>
+        <Cards
+          imgSrc="img/marketing.png"
+          linkWeb="https://embrace-landing.netlify.app"
+          linkGithub="https://github.com/Glitzypanic/marketing-landingPage"
+          statuses={["online", "new"]}
+        >
+          <h3 slot="title">Landing Page de Marketing</h3>
+          <p slot="description">
+            Esta landing page fue diseñada para una empresa de marketing digital
+            📈. Con un diseño moderno y atractivo, esta página muestra cómo una
+            empresa puede presentar sus servicios de manera efectiva y
+            profesional. 💼
           </p>
         </Cards>
       </div>
@@ -165,13 +196,16 @@ import ToolsCard from "../components/ToolsCard.astro";
       </section>
 
       <footer class="mt-10 p-5 flex justify-between items-center">
-        <p>© 2024 Jose Farias</p>
+        <p>© 2024 José Farías</p>
         <ul class="flex gap-3">
           <li>
-            <a href="/#about">Sobre mi</a>
+            <a href="/#about" class="hover:text-pink-500">Sobre mí</a>
           </li>
           <li>
-            <a href="mailto:jose.fariascdv@gmail.com">Contactame</a>
+            <a
+              href="mailto:jose.fariascdv@gmail.com"
+              class="hover:text-pink-500">Contáctame</a
+            >
           </li>
         </ul>
       </footer>
