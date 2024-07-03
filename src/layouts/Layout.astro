@@ -21,14 +21,16 @@ const { title } = Astro.props;
       class="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
     >
     </div>
-    <header class="flex justify-center items-center max-w-screen-xl w-full fixed z-10 lg:text-md sm:text-sm xs:text-[11px]">
+    <header
+      class="flex justify-center items-center max-w-screen-xl w-full fixed z-10 lg:text-md sm:text-sm xs:text-[11px]"
+    >
       <nav class="w-fit p-3 rounded-3xl mt-2 mb-2 text-[#d0dee2]">
         <ul class="flex gap-3">
           <li>
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/#about">Sobre mi</a>
+            <a href="/#about">Sobre mí</a>
           </li>
           <li>
             <a href="/#experience">Experiencia</a>
@@ -40,7 +42,9 @@ const { title } = Astro.props;
             <a href="/#tools">Herramientas</a>
           </li>
           <li>
-            <a class="text-pink-500" href="mailto:jose.fariasdv@gmail.com">Contacto</a>
+            <a class="text-pink-500" href="mailto:jose.fariasdv@gmail.com"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
@@ -55,6 +59,6 @@ const { title } = Astro.props;
           nav.classList.remove("backdrop-blur-3xl", "bg-slate-50/30");
         }
       });
-      </script>
-</body>
+    </script>
+  </body>
 </html>
