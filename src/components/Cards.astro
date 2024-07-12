@@ -64,10 +64,12 @@ const getStatusPill = (status) => {
   </div>
   <div class="info p-5">
     <img src={imgSrc} alt="" width="400" />
-    <h2 class="text-4xl mt-5 text-red-500"><slot name="title" /></h2>
-    <p class="text-md mt-2 text-pretty">
+    <div class="text-xl mt-5 font-bold">
+      <slot name="title" />
+    </div>
+    <div class="text-md mt-2 text-pretty">
       <slot name="description" />
-    </p>
+    </div>
     <div class="mt-10">
       <a
         role="button"
