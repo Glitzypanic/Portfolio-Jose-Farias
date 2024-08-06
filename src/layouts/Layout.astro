@@ -10,8 +10,52 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Porfolio Jose Farias" />
     <meta name="viewport" content="width=device-width" />
+    <!-- HTML Meta Tags -->
+    <title>Portafolio José Farías</title>
+    <meta
+      name="description"
+      content="Desarrollador web autodidacta especializado en crear sitios web impactantes. Apasionado por el diseño y la codificación, con enfoque en el desarrollo front-end y ampliando conocimientos en bases de datos."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://jfdev.pro" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portafolio José Farías" />
+    <meta
+      property="og:description"
+      content="Desarrollador web autodidacta especializado en crear sitios web impactantes. Apasionado por el diseño y la codificación, con enfoque en el desarrollo front-end y ampliando conocimientos en bases de datos."
+    />
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta
+      property="og:image"
+      content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/jfdev.pro/Portafolio%20Jos%C3%A9%20Far%C3%ADas/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7cf63450-b32b-4b41-8a9a-972b3cef75bc.png%3Ftoken%3D0HMUHx7fxe09F4NAlpGitQuNaElszCNvrkv3rcw3bMw%26height%3D403%26width%3D1200%26expires%3D33258975951/og.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="jfdev.pro" />
+    <meta property="twitter:url" content="https://jfdev.pro" />
+    <meta name="twitter:title" content="Portafolio José Farías" />
+    <meta
+      name="twitter:description"
+      content="Desarrollador web autodidacta especializado en crear sitios web impactantes. Apasionado por el diseño y la codificación, con enfoque en el desarrollo front-end y ampliando conocimientos en bases de datos."
+    />
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta
+      name="twitter:image"
+      content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/jfdev.pro/Portafolio%20Jos%C3%A9%20Far%C3%ADas/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F7cf63450-b32b-4b41-8a9a-972b3cef75bc.png%3Ftoken%3D0HMUHx7fxe09F4NAlpGitQuNaElszCNvrkv3rcw3bMw%26height%3D403%26width%3D1200%26expires%3D33258975951/og.png"
+    />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <link rel="icon" type="image/svg+xml" href="svg/code-brackets.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
